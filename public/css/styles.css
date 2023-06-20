@@ -1,0 +1,62 @@
+body {
+    color: #9f1717;
+    font-family: arial;
+    max-width: 800px;
+    margin: 0 auto; /*0 top bottom margin, auto center left right */
+    padding: 0 16px;
+    /* Set up flex box */
+    display: flex;
+    /* Set everything to flex from top to bottom */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.maincontent {
+    flex-grow: 1; /* Main content should take up rest of page */    
+}
+
+footer {
+    color: #888888;
+    border-top: 3px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/* Can use multiple params to target assets in a specific area of the page */
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+/* Can adjust specific element with the .xyz tag*/
+.portrait { 
+    width: 250px;
+}
+
+/* Style inputs */
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+
+/* Style buttons */
+button {
+    cursor: pointer;
+    border: 1 px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+

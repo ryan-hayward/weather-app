@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // Define path for Express config
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -102,9 +103,9 @@ app.get('*', (req, res) => {
 
 
 // Common development port (default for HTTP is Port 80)
-// Tell the app to listen on port 3000
-app.listen(3000, () => {
-    console.log('Server is up and running on port 3000')
+// Tell the app to listen on port 3000 OR the environmentally available port
+app.listen(port, () => {
+    console.log('Server is up and running on ' + port)
 })
 
 

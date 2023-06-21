@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit', (e) =>  {
     //store the search value
     const location = searchElement.value
     //Fetch weather data
-    url = 'http://localhost:3000/weather?address=' + location
+    url = '/weather?address=' + location
     fetch(url).then((response) => {
         response.json().then((data) => {
             if (data.error) {
